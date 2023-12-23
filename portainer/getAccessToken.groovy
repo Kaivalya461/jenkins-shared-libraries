@@ -1,5 +1,9 @@
 import groovy.json.JsonSlurper
 
+def call(def authUrl, def USR, def PSW) {
+    getAccessToken(authUrl, USR, PSW)
+}    
+
 /*
  * This function get the Access Token using the Login Service
  */
