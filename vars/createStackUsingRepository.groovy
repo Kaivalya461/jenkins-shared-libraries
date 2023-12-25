@@ -1,13 +1,9 @@
 import groovy.json.JsonSlurper
 
-def call(def authUrl, def USR, def PSW) {
-    getAccessToken(authUrl, USR, PSW)
-}
-
 /*
  * This function applies Kubernetes Manifest using Portainer API
  */
-def createStackUsingRepository(
+def call(
     def accessToken,
     def stackName,
     def repoUrl,
